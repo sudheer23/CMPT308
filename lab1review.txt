@@ -1,0 +1,24 @@
+9 pts
+
+Summary:
+
+- The summary has good quality, but it is only 437 words. The requirement was 500!
+
+- The summary has poor quality. 13% of what you wrote comes exactly from an
+  article, and that is not good. You can see your report on iLearn/Turnitin.
+
+
+\LaTeX:
+
+- When writing \LaTeX, try to keep every line of text within 80 characters or
+  100 at the most, then continue in a new line, \LaTeX will continue if you
+  break lines.
+
+- The usage of figures is incomplete. Usually figures have a caption that
+  describes the content of the figure. What you are doing is simply add a
+  picture with \includegraphics, but you needed to add a figure.
+
+
+- Dr. Rivas
+
+
