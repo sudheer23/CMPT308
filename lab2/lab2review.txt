@@ -1,0 +1,78 @@
+5 pts
+
+Correctness:
+
+- The program has a runtime error:
+$ java driver < testcase.txt
+Exception in thread "main" java.lang.NumberFormatException: For input string:
+""
+  at
+java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+  at java.lang.Integer.parseInt(Integer.java:504)
+  at Aescipher.aesSbox(Aescipher.java:117)
+  at Aescipher.generateRoundKeys(Aescipher.java:85)
+  at Driver.main(Driver.java:26)
+
+
+Style:
+
+- Both files have major style problems. You are not following the style
+  guidelines.
+
+- There is incorrect indentation in the driver file
+
+- You are using TABs! Please use two-spaces instead of TABs.
+
+- Poor block comments
+
+- Both files are missing the header. Remember: Each file must have a block
+  comment at the top which gives the name of the file, the student's name, the
+  assignment, the date, the version, and a comment about what is contained in
+  the file. For example:
+/**
+ * file: SinglyLinkedList.java
+ * author: student name
+ * course: CMPT 220
+ * assignment: project 1
+ * due date: August 30, 2003
+ * version: 1.3
+ * 
+ * This file contains the declaration of the SinglyLinkedList abstract data
+ * type.
+ */
+
+- Both files have incorrect method header formatting. Each function must have a
+  comment block before it, which gives the function name, describes each
+  parameter and the return value (if any), and explains the purpose of the
+  function. Refer to the parameters by name, not by type. Here is an example:
+/**
+ * factorial
+ *
+ * This function computes the factorial of the given input. The factorial is
+ * defined as factorial(n) = n! = n * (n-1) * (n-2) * ... * 3 * 2 * 1.
+ * 
+ * Parameters:
+ *   n: the number on which to compute the factorial
+ * 
+ * Return value: the factorial of n, or 1 if n <= 0.
+ */
+public static int factorial(int n) {
+    if (n <= 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+
+Efficiency and Other Comments:
+
+- When searching the Sbox or Rcon you are constantly parsing integers. Perhaps
+  it would be more efficient to have them as integers already and save
+  constantly parsing.
+
+- The driver.java file is incorrecly named as: Driver.java
+
+- The aescipher.java file is incorrectly named as: Aeschiper.java 
+
+
+- Dr. Rivas
